@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<!--
+	Fractal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>HOTSPOT STATUS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script language="JavaScript">
+<!--
+    function startClock() {
+        $(if popup == 'true')
+        open('$(link-status)', 'hotspot_status', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=290,height=200');
+	$(endif)
+    }
+//-->
+</script>
+	</head>
+	<body onload="startClock()" class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="content">
+				
+<div id="login">
+<h2><span class="fontawesome-lock"></span>STATUS POŁACZENIA</h2>
+
+<br><br><br>
+					<h1>Zalogowano. WITAMY IP: $(ip)</h1>
+					<ul>
+						<li>Czas trwania sesji:1h (godzina) ( aby odnowic czas, musisz zalogowac sie ponownie) <br></li>
+						</p>
+						STATUS Polaczenia:<br>
+						POLACZONY /POZOSTALO:$(uptime) / $(session-time-left)</ul><br>
+						Czas trwania sesji:$(uptime)<br>
+						status refresh:$(refresh-timeout)<br>
+						IP: $(ip)<br>
+						MAC:$(mac)<br>
+						username:$(username) , 
+						Interfejs:$(interface-name)
+				</div>
+			</header>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright">&copy;  <a href="http://html5up.net">HTML5 UP</a></p>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

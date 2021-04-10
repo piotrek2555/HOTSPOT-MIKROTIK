@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<!--
+	Fractal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>HOTSPOT MIKRTOIK- LOGOWANIE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+$(if chap-id)
+<form name="sendin" action="$(link-login-only)" method="post"> <input name="username" type="hidden"> <input name="password" type="hidden"> <input name="dst" value="$(link-orig)" type="hidden"> <input name="popup" value="true" type="hidden"> </form>
+<script type="text/javascript" src="/md5.js"></script>
+<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)
+	
+		<!-- Header -->
+			<header id="header">
+				<div class="content">
+<div id="login">
+<h2><span class="fontawesome-lock"></span>ZALOGUJ
+SIE</h2>
+<form name="login" action="$(li-login-only)" method="post" $(if="" chap-id="" onsubmit="return doLogin()" $(endif="">
+<fieldset>
+<!-- form --
+<p><label for="username" ></label></p>
+<br>
+<p><input name="username"  id="username"  ></p>
+<p><label for="password"  ></label></p> 
+<p><input onfocus="if(this.value=='password')this.value=''" onblur="if(this.value=='')this.value='password'" id="password" name="password" type="password" ></p> <!-- form end -->
+						</br></br><p>MAC:$(mac)</br>
+					   <strong>IP:$(ip)</strong>
+					   </p></br>
+					<h1>REGULAMIN dostępu do usługi hotspot:</h1>
+					<ul>
+					<li><p>PRĘDKOSC INTERNETU: 512/512k<br></li>
+						<li>Czas trwania sesji:1h (godzina) ( po utracie dostępu do Internetu, klient musi ponownie połączyć się z HOTSPOTEM.<br></li>
+						</p>
+						
+						
+						</ul>
+						
+				</fieldset> <div id="go">
+$(if trial == 'yes') <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">ZALOGUJ SIE TRIAL</a>.$(endif)
+</div>  </div>
+</form>
+
+			</header>
+
+			<!-- JS because of IE support; better: placeholder="password" -->
+<p>$(if error)<label style="color: rgb(255, 128, 128);">$(error)</label>$(endif)</p>
+<p><input id="go" value="ZALOGUJ SIE" type="hidden" ></p>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+<footer id="footer">
+				
+				<p class="copyright"><a href="http://html5up.net">HTML5 UP</a></p>
+			</footer> 
+			
+</div>
+
+			
+	</body>
+	
+</html>
